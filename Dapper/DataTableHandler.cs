@@ -12,6 +12,7 @@ namespace Dapper
         public void SetValue(IDbDataParameter parameter, object value)
         {
             TableValuedParameter.Set(parameter, value as DataTable, null);
+            System.out.println("syso");
         }
     }
 }

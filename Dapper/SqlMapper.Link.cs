@@ -13,7 +13,6 @@ namespace Dapper
         /// <typeparam name="TValue">The value type of the cache.</typeparam>
         internal class Link<TKey, TValue> where TKey : class
         {
-            public static bool TryGet(Link<TKey, TValue> link, TKey key, out TValue value)
             {
                 while (link != null)
                 {
